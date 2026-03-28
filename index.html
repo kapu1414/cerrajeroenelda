@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Stoic Sentinel | Reparaciones de Urgencia 24H</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        @keyframes pulse-custom {
+            0% { box-shadow: 0 0 0 0 rgba(253, 118, 26, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(253, 118, 26, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(253, 118, 26, 0); }
+        }
+        .animate-pulse-urgent {
+            animation: pulse-custom 2s infinite;
+        }
+        .decisive-gap { margin-bottom: 6rem; }
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "error-container": "#ffdad6",
+                "primary": "#00236f",
+                "tertiary": "#735c00",
+                "on-surface-variant": "#444651",
+                "on-error-container": "#93000a",
+                "surface": "#f7f9fb",
+                "inverse-on-surface": "#eff1f3",
+                "error": "#ba1a1a",
+                "on-primary-container": "#90a8ff",
+                "background": "#f7f9fb",
+                "tertiary-fixed": "#ffe083",
+                "primary-fixed": "#dce1ff",
+                "surface-bright": "#f7f9fb",
+                "primary-container": "#1e3a8a",
+                "outline-variant": "#c5c5d3",
+                "primary-fixed-dim": "#b6c4ff",
+                "on-secondary-container": "#5c2400",
+                "on-background": "#191c1e",
+                "on-primary": "#ffffff",
+                "on-tertiary-fixed": "#231b00",
+                "on-error": "#ffffff",
+                "inverse-surface": "#2d3133",
+                "outline": "#757682",
+                "secondary-container": "#fd761a",
+                "surface-dim": "#d8dadc",
+                "on-tertiary-fixed-variant": "#574500",
+                "surface-tint": "#4059aa",
+                "tertiary-container": "#cea700",
+                "on-surface": "#191c1e",
+                "on-secondary": "#ffffff",
+                "surface-container-highest": "#e0e3e5",
+                "on-primary-fixed-variant": "#264191",
+                "surface-container": "#eceef0",
+                "surface-container-low": "#f2f4f6",
+                "secondary-fixed-dim": "#ffb690",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#e6e8ea",
+                "secondary-fixed": "#ffdbca",
+                "on-secondary-fixed-variant": "#783200",
+                "secondary": "#9d4300",
+                "on-primary-fixed": "#00164e",
+                "inverse-primary": "#b6c4ff",
+                "on-secondary-fixed": "#341100",
+                "tertiary-fixed-dim": "#eec200",
+                "surface-variant": "#e0e3e5",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-container": "#4e3e00"
+              },
+              fontFamily: {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container/30">
+<!-- Persistent Ticker -->
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md shadow-xl shadow-primary/5 transition-all duration-300">
+<nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black text-primary dark:text-blue-400 tracking-tighter">
+                URGELDA
+            </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-[0.6875rem] tracking-widest uppercase" href="#">Cerrajeros</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-[0.6875rem] tracking-widest uppercase" href="#">Fontaneros</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-[0.6875rem] tracking-widest uppercase" href="#">Cristaleros</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300 text-[0.6875rem] tracking-widest uppercase" href="#">Electricistas</a>
+</div>
+<a class="bg-secondary-container text-on-secondary px-6 py-2 rounded-xl font-bold text-sm tracking-tight active:scale-95 duration-200 shadow-lg shadow-secondary/20" href="tel:000000000">
+                URGENCIAS 24H
+            </a>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 py-20 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<span class="inline-block bg-primary-container text-on-primary-container px-3 py-1 text-[0.6875rem] font-bold tracking-[0.1em] uppercase rounded">SERVICIO PRIORITARIO</span>
+<h1 class="text-5xl md:text-7xl font-black text-primary tracking-tighter leading-[0.9] md:leading-[1.1]">
+                        Servicios de URGENCIA <span class="text-secondary-container">En ELDA</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                        Ofrecemos asistencia inmediata de cerrajeros, fontaneros, cristaleros y electricistas. Técnicos locales disponibles 24/7 con garantía de satisfacción y precios transparentes.
+                    </p>
+<!-- Giant CTA -->
+
+</div>
+<div class="hidden md:block relative">
+<div class="absolute inset-0 bg-primary/5 rounded-[3rem] -rotate-3 scale-105"></div>
+<img alt="Professional technician working" class="relative rounded-[3rem] w-full h-[600px] object-cover shadow-2xl" data-alt="Close up of a professional technician's hands using precision tools on a complex home electrical system with focused lighting" src="cerrajero.jpg"/>
+</div>
+</div>
+<!-- Background Decorative Elements -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-container/5 to-transparent -z-10"></div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-low py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-around gap-8 text-center">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary transition-transform group-hover:scale-110 shadow-sm">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<span class="text-[0.6875rem] font-bold tracking-widest uppercase text-on-surface-variant">Precio Cerrado</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary transition-transform group-hover:scale-110 shadow-sm">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary transition-transform group-hover:scale-110 shadow-sm">
+<span class="material-symbols-outlined text-3xl">home_pin</span>
+</div>
+<span class="text-[0.6875rem] font-bold tracking-widest uppercase text-on-surface-variant">Técnicos Locales</span>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-2xl">
+<span class="text-secondary font-bold tracking-widest text-[0.6875rem] uppercase">Nuestras Especialidades</span>
+<h2 class="text-4xl md:text-5xl font-black text-primary tracking-tighter mt-4">Soluciones Inmediatas</h2>
+</div>
+<div class="hidden md:block h-[2px] bg-outline-variant/30 flex-grow ml-12 mb-4"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Cerrajeros -->
+<div class="group bg-surface-container-lowest p-10 rounded-[2rem] transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 text-surface-container-highest/20 transition-transform group-hover:scale-125 duration-700">
+<span class="material-symbols-outlined text-8xl" data-weight="fill">key</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-black text-primary mb-4 tracking-tight">Cerrajeros</h3>
+<ul class="space-y-4 text-on-surface-variant mb-8">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Apertura de puertas sin romper
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Cambio de llaves y bombines
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Sistemas de seguridad avanzada
+                                </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-secondary font-black text-sm group-hover:gap-4 transition-all" href="tel:000000000">
+                                CONTACTAR <span class="material-symbols-outlined text-lg">trending_flat</span>
+</a>
+</div>
+</div>
+<!-- Fontaneros -->
+<div class="group bg-surface-container-lowest p-10 rounded-[2rem] transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 text-surface-container-highest/20 transition-transform group-hover:scale-125 duration-700">
+<span class="material-symbols-outlined text-8xl" data-weight="fill">water_drop</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-black text-primary mb-4 tracking-tight">Fontaneros</h3>
+<ul class="space-y-4 text-on-surface-variant mb-8">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Fugas de agua y humedades
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Desatascos urgentes 24h
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Reparación de termos y calderas
+                                </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-secondary font-black text-sm group-hover:gap-4 transition-all" href="tel:000000000">
+                                CONTACTAR <span class="material-symbols-outlined text-lg">trending_flat</span>
+</a>
+</div>
+</div>
+<!-- Electricistas -->
+<div class="group bg-surface-container-lowest p-10 rounded-[2rem] transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 text-surface-container-highest/20 transition-transform group-hover:scale-125 duration-700">
+<span class="material-symbols-outlined text-8xl" data-weight="fill">bolt</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-2xl font-black text-primary mb-4 tracking-tight">Electricistas</h3>
+<ul class="space-y-4 text-on-surface-variant mb-8">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Apagones y cortocircuitos
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Boletines eléctricos oficiales
+                                </li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                    Averías en cuadros eléctricos
+                                </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-secondary font-black text-sm group-hover:gap-4 transition-all" href="tel:000000000">
+                                CONTACTAR <span class="material-symbols-outlined text-lg">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials (Editorial Style) -->
+<section class="py-24 px-6 bg-surface-container-low overflow-hidden relative">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/3">
+<span class="text-secondary font-bold tracking-widest text-[0.6875rem] uppercase">Opiniones Reales</span>
+<h2 class="text-4xl font-black text-primary tracking-tighter mt-4">La confianza de nuestros vecinos.</h2>
+<div class="mt-8 flex gap-1">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-secondary" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-secondary" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-secondary" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-secondary" data-weight="fill">star</span>
+</div>
+<p class="mt-4 text-on-surface-variant font-medium">4.9/5 basado en más de 200 servicios este mes.</p>
+</div>
+<div class="md:w-2/3 grid md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-xl shadow-primary/5 relative">
+<span class="absolute -top-4 -left-4 text-6xl text-secondary-container/20 font-serif">“</span>
+<p class="text-lg text-on-surface mb-6 leading-relaxed italic">"Llamé a las 3 de la mañana por un reventón de tubería. Estuvieron en casa en 15 minutos exactos. Rapidez y honestidad increíble."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center font-bold text-primary">RM</div>
+<div>
+<h4 class="font-bold text-primary">Ricardo M.</h4>
+<p class="text-[0.6875rem] text-on-surface-variant uppercase tracking-wider">Urgencia Fontanería</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-xl shadow-primary/5 relative">
+<span class="absolute -top-4 -left-4 text-6xl text-secondary-container/20 font-serif">“</span>
+<p class="text-lg text-on-surface mb-6 leading-relaxed italic">"Perdí las llaves y temía lo peor. El cerrajero fue súper amable, abrió la puerta en segundos y me cobró exactamente lo presupuestado."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center font-bold text-primary">LA</div>
+<div>
+<h4 class="font-bold text-primary">Lucía A.</h4>
+<p class="text-[0.6875rem] text-on-surface-variant uppercase tracking-wider">Urgencia Cerrajería</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface py-12 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<!-- Brand -->
+<div class="space-y-4">
+<div class="text-2xl font-black text-primary dark:text-blue-400">The Stoic Sentinel</div>
+<p class="text-on-surface-variant/70 text-sm leading-relaxed">Red nacional de técnicos especializados en reparaciones de emergencia. Seguridad y confianza en cada intervención.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">verified</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">support_agent</span>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="md:col-span-2 rounded-2xl overflow-hidden h-48 md:h-full min-h-[200px] relative group">
+<div class="absolute inset-0 bg-primary/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500"></div>
+<img alt="City map placeholder" class="w-full h-full object-cover grayscale brightness-90 contrast-125" data-alt="Stylized monochromatic city map with minimal design and geometric road patterns in shades of deep blue and light grey" data-location="Madrid, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjn9u4Woqa9TDocTJGYhM6FGusTcNra1jBI2HkL2do11XipHnc0hKx-wF_9SSKjmYZFdfnsyo_FJEvNj-NgDQ0AElZsXzmqnPoKkxqRYsezf0_LZByabuoj4-KUnAQ1m79peyWw2lrdyFtSkMWVPtIGT-RvctdJEp7FyHaIpu2Ni_8xYGgLdaO2VuCIVBVb3EwzEk1Lr2hAA1wfnz2qyotvzM40ePC1fD565rr5W3w_HTA3jthVXmwtVhRGgAGpqnwPSo2j9rV1tM"/>
+<div class="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-xl z-20 text-xs font-bold text-primary uppercase tracking-widest">
+                        ZONAS DE COBERTURA ACTIVA
+                    </div>
+</div>
+<!-- Links -->
+<div class="grid grid-cols-1 gap-8">
+<div>
+<h4 class="text-primary font-black text-xs tracking-widest uppercase mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant/70 hover:text-secondary transition-all text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant/70 hover:text-secondary transition-all text-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-primary font-black text-xs tracking-widest uppercase mb-4">Servicios</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant/70 hover:text-secondary transition-all text-sm" href="#">Service Areas</a></li>
+<li><a class="text-on-surface-variant/70 hover:text-secondary transition-all text-sm" href="#">Contact Us</a></li>
+<li><a class="text-on-surface-variant/70 hover:text-secondary transition-all text-sm font-bold text-secondary" href="#">Emergency Dispatch</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant/50 text-[0.6875rem] tracking-widest uppercase">
+                    © 2024 The Stoic Sentinel Emergency Services. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Mobile Floating CTA -->
+<div class="fixed bottom-6 left-6 right-6 md:hidden z-[100]">
+<a class="flex items-center justify-between bg-secondary-container text-white p-5 rounded-2xl shadow-2xl shadow-secondary/40 animate-pulse-urgent" href="tel:000000000">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl" data-weight="fill">call</span>
+<span class="font-black text-lg tracking-tight">LLAMAR AHORA</span>
+</div>
+<span class="text-sm font-bold opacity-80">000 000 000</span>
+</a>
+</div>
+</body></html>
